@@ -1,0 +1,154 @@
+.root {
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  font-family: "Inter", Arial, Helvetica, serif;
+  max-width: 1280px;
+  min-width: 320px;
+  width: calc(100% - 2 * 200px);
+}
+
+.header {
+  border-bottom: 1px solid #545454;
+}
+
+.header__logo {
+  max-width: 142px;
+  margin-bottom: 37px;
+}
+
+.profile {
+  padding-top: 40px;
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.profile__image {
+  max-width: 168.75px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.profile__wrap {
+  display: flex;
+  max-width: 340px;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  margin-right: 240px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.profile__title {
+  max-width: 246px;
+  margin: 0 20px 0 0;
+  font-family: Inter;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 48px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.profile__edit-btn {
+  margin-top: 15px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-image: url("/img/penicon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+  border: 1px solid #fff;
+}
+.profile__subtitle {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+}
+
+.profile__btn {
+  width: 150px;
+  height: 50px;
+  background-color: #000;
+  padding: 0;
+  background-image: url("/img/olus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #fff;
+}
+
+.cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 282px);
+  row-gap: 20px;
+  column-gap: 17px;
+}
+
+.elements {
+  padding-top: 51px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  width: 100%;
+  object-fit: cover;
+  min-height: 282px;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+}
+
+.card__wrap {
+  background-color: #fff;
+  color: #000;
+  padding: 25px 20px 25px 21px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.card__title {
+  margin: 0;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+}
+
+.card__add-like {
+  background-color: #fff;
+  background-image: url("/img/hearth.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  border: 0px;
+}
+
+.footer {
+  padding-top: 67px;
+}
+
+.footer__copyright {
+  margin: 0;
+  color: #545454;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
