@@ -8,11 +8,17 @@
   font-family: "Inter", Arial, Helvetica, serif;
   max-width: 1280px;
   min-width: 320px;
-  width: calc(100% - 2 * 200px);
+
+}
+.page{ 
+  margin: 0 auto;
+max-width: 880px;
+min-width: 282px;
 }
 
 .header {
   border-bottom: 1px solid #545454;
+  max-width: ;
 }
 
 .header__logo {
@@ -40,20 +46,13 @@
   flex-wrap: wrap;
   row-gap: 8px;
   margin-right: 240px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .profile__title {
-  max-width: 246px;
   margin: 0 20px 0 0;
   font-family: Inter;
   font-size: 42px;
   font-weight: 500;
   line-height: 48px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .profile__edit-btn {
@@ -94,6 +93,7 @@
   grid-template-columns: repeat(auto-fill, 282px);
   row-gap: 20px;
   column-gap: 17px;
+  justify-content: center;
 }
 
 .elements {
@@ -129,6 +129,9 @@
   font-size: 24px;
   font-weight: 900;
   line-height: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card__add-like {
@@ -136,8 +139,9 @@
   background-image: url("/img/hearth.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 22px;
-  border: 0px;
+  min-width: 22px;
+  border: 0;
+  padding: 0;
 }
 
 .footer {
