@@ -1,0 +1,24 @@
+{
+  "name": "mesto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nested": "./node_modules/.bin/bemify style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shaidullberg/mesto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shaidullberg/mesto/issues"
+  },
+  "homepage": "https://github.com/Shaidullberg/mesto#readme",
+  "devDependencies": {
+    "css-to-bem-file-structure": "0.0.5"
+  }
+}

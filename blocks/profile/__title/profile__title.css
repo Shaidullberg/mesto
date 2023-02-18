@@ -1,0 +1,16 @@
+.profile__title {
+  margin: 0 20px 0 0;
+  font-family: Inter;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .profile__title {
+    margin-right: 12px;
+    margin-left: 27px;
+    font-size: 27px;
+    line-height: 32.68px;
+  }
+}
