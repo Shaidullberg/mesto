@@ -6,7 +6,7 @@
   top: -40px;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
-  background-image: url("/img/Close Icon.svg");
+  background-image: url("../../../img/Close Icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;

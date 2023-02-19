@@ -3,7 +3,7 @@
   min-height: 50px;
   background-color: #000;
   padding: 0;
-  background-image: url("/img/olus.svg");
+  background-image: url("../../../img/olus.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #fff;
