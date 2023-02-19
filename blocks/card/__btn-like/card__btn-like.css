@@ -1,0 +1,19 @@
+.card__btn-like {
+  background-color: #fff;
+  background-image: url("/img/hearth.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 22px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card__btn-like:hover {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  background-repeat: no-repeat;
+  background-position: center;
+}

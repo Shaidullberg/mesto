@@ -1,0 +1,13 @@
+.card__wrap {
+  background-color: #fff;
+  color: #000;
+  padding: 25px 20px 25px 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}

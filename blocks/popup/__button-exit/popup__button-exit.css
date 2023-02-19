@@ -1,0 +1,31 @@
+.popup__button-exit {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  background-image: url("/img/Close Icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .popup__button-exit {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    right: 0;
+    top: -36px;
+  }
+}
+
+.popup__button-exit:hover {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
