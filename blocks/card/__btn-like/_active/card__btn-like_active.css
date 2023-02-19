@@ -1,4 +1,4 @@
 /* Смена стиля иконки сердечка при нажатии ( Следующий спринт) */
 .card__btn-like_active {
-  background-image: url("/img/Union.svg");
+  background-image: url("../../../../img/Union.svg");
 }

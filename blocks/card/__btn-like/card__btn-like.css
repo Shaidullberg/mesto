@@ -1,6 +1,6 @@
 .card__btn-like {
   background-color: #fff;
-  background-image: url("/img/hearth.svg");
+  background-image: url("../../../img/hearth.svg");
   background-repeat: no-repeat;
   background-position: center;
   min-width: 22px;
