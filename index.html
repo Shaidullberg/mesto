@@ -22,12 +22,12 @@
           <div class="profile__inner">
             <h1 class="profile__title">Жак&#8209;Ив&nbsp;Кусто</h1>
             <!-- Кнопка для открытия попапа редактирования профиля -->
-            <button type="button" class="profile__edit-btn"></button>
+            <button type="button" class="profile__btn-edit"></button>
           </div>
           <h2 class="profile__subtitle">Исследователь океана</h2>
         </div>
         <!-- Кнопка для открытия попапа добавления карточек (следующий спринт) -->
-        <button type="button" class="profile__btn"></button>
+        <button type="button" class="profile__btn-add"></button>
       </section>
       <!-- Начало секции карточек с подписанными изображениями чего-то -->
       <section class="elements">
@@ -35,7 +35,7 @@
           <li class="card">
             <img src="img/perm.png" alt="город Пермь" class="card__image" />
             <div class="card__wrap">
-              <h3 class="card__title">Пермь</h3>
+              <h2 class="card__title">Пермь</h2>
               <!--кнопка для лайка (следующий спринт) -->
               <button type="button" class="card__btn-like"></button>
             </div>
@@ -43,7 +43,7 @@
           <li class="card">
             <img src="img/volgograd.png" alt="город Волгоград" class="card__image" />
             <div class="card__wrap">
-              <h3 class="card__title">Волгоград</h3>
+              <h2 class="card__title">Волгоград</h2>
               <!--кнопка для лайка (следующий спринт) -->
               <button type="button" class="card__btn-like"></button>
             </div>
@@ -51,7 +51,7 @@
           <li class="card">
             <img src="img/saratov.png" alt="Город Саратов" class="card__image" />
             <div class="card__wrap">
-              <h3 class="card__title">Саратов</h3>
+              <h2 class="card__title">Саратов</h2>
               <!--кнопка для лайка (следующий спринт) -->
               <button type="button" class="card__btn-like"></button>
             </div>
@@ -59,7 +59,7 @@
           <li class="card">
             <img src="img/chelyabinsk.png" alt="город Челябинск" class="card__image" />
             <div class="card__wrap">
-              <h3 class="card__title">Челябинск</h3>
+              <h2 class="card__title">Челябинск</h2>
               <!--кнопка для лайка (следующий спринт) -->
               <button type="button" class="card__btn-like"></button>
             </div>
@@ -67,7 +67,7 @@
           <li class="card">
             <img src="img/norilsk.png" alt="город Норильск" class="card__image" />
             <div class="card__wrap">
-              <h3 class="card__title">Норильск</h3>
+              <h2 class="card__title">Норильск</h2>
               <!--кнопка для лайка (следующий спринт) -->
               <button type="button" class="card__btn-like"></button>
             </div>
@@ -75,7 +75,7 @@
           <li class="card">
             <img src="img/omsk.png" alt="город Омск" class="card__image" />
             <div class="card__wrap">
-              <h3 class="card__title">Омск</h3>
+              <h2 class="card__title">Омск</h2>
               <!--кнопка для лайка (следующий спринт) -->
               <button type="button" class="card__btn-like"></button>
             </div>
@@ -87,25 +87,23 @@
         <p class="footer__copyright">© 2020 Mesto Russia</p>
       </footer>
     </main>
-    <!-- вспывающее окно для редактирования профиля -->
+    <!-- всплывающее окно для редактирования профиля -->
     <div class="popup">
       <div class="popup__container">
-        <div class="popup__wrap">
           <h3 class="popup__title">Редактировать профиль</h3>
-          <form class="popup__form">
+          <form class="popup__form" name="popup-form-edit" action="#">
             <!-- Поле для ввода имени -->
-            <input type="text" id="name" name="name" class="popup__form-input popup__form-input_name" placeholder="Введите имя" />
+            <input type="text" id="name" name="name" class="popup__item popup__item_el_name" placeholder="Введите имя" />
             <!-- Поле для ввода информации о себе -->
-            <input type="text" id="about" name="about" class="popup__form-input popup__form-input_about" placeholder="Введите информацию о себе" />
-            <!-- кнопка для сохрания введённых в поля данных пользователя -->
+            <input type="text" id="about" name="about" class="popup__item popup__item_el_about" placeholder="Введите информацию о себе" />
+            <!-- кнопка для сохранения введённых в поля данных пользователя -->
             <button type="submit" class="popup__button-save">Сохранить</button>
-            <!-- Кнопка для закртыия попапа -->
-            <button type="button" class="popup__button-exit"></button>
           </form>
-        </div>
+          <!-- Кнопка для закрытия попапа -->
+          <button type="button" class="popup__button-exit"></button>
       </div>
     </div>
     <!-- Подключил скрипт -->
-    <script src="script.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

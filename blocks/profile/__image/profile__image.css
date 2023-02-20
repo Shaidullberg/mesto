@@ -4,6 +4,7 @@
   object-fit: cover;
   border-radius: 50%;
   margin-right: 30px;
+  aspect-ratio: auto 1 / 1;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {

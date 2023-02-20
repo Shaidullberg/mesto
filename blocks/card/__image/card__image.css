@@ -5,4 +5,5 @@
   min-height: 282px;
   border-top-left-radius: 3%;
   border-top-right-radius: 3%;
+  aspect-ratio: auto 1 / 1;
 }
