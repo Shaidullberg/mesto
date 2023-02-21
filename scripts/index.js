@@ -13,19 +13,19 @@ editBtn.addEventListener("click", function () {
   // если клик по значку редактирования, то добавляю класс
   formName.value = currentName.textContent;
   formAbout.value = currentAbout.textContent;
-  popup.classList.add("popup_opened");
+  popup.classList.add("popup_opened"); // Добавляю класс
 });
 
-exitPopup.addEventListener("click", function () {
-  // если клик по значку крестику, то удаляю класс
-  popup.classList.remove("popup_opened");
-});
+function closePopup() {
+  popup.classList.remove("popup_opened"); // Объявляем функцию
+}
 
+exitPopup.addEventListener("click", closePopup); // Вызов функции closePopup
 
 // она никуда отправляться не будет
 function handleFormSubmit(evt) {
-  evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
-  popup.classList.remove("popup_opened"); // удаляю класс при нажатии сохранить
+  evt.preventDefault(); // Сброс стандартной отправки формы
+  closePopup(); // Вызов функции closePopup
   currentName.textContent = formName.value; // переношу данные из формы в тег
   currentAbout.textContent = formAbout.value; // переношу данные из формы в тег
 }
