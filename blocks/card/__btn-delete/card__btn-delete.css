@@ -1,0 +1,14 @@
+.card__btn-delete {
+    background-image: url("../../../img/Dekete.svg");
+    background-color: rgba(0,0,0,0);
+    padding: 0;
+    border: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 19px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
