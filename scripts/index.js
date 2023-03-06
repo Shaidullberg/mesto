@@ -97,7 +97,7 @@ function handleEditFormSubmit(evt) {
 }
 function handleAddFormSubmit(evt) {
   evt.preventDefault(); 
-
+  
   const cardToAdd = template.content.cloneNode(true)
   const cardImg = cardToAdd.querySelector(".card__image");
   const cardTitle = cardToAdd.querySelector(".card__title");
@@ -105,15 +105,20 @@ function handleAddFormSubmit(evt) {
   cardImg.src = cardToAddUrl.value;
   cardImg.alt = cardToAddName.value;
   cardTitle.textContent = cardToAddName.value;
-  
+  cardImg.addEventListener('click', (e) => {
+    imagePopup.querySelector('.popup_image').src = e.target.src;
+    openPopup(imagePopup)
+  })
+
   cardsContainer.prepend(cardToAdd)
+  const currentPopup = Array.from(popups).find(popup => popup.classList.contains('popup_opened'))
+  closePopup(currentPopup); // Вызов функции closePopup
 }
 
-console.log(popups)
 popups.forEach((popup) => {
   const closeButton = popup.querySelector('.popup__button-exit') 
   
-  closeButton.addEventListener('click', (e) => {
+  closeButton.addEventListener('click', () => {
     closePopup(popup)
   })
   
