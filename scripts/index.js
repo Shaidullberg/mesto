@@ -60,6 +60,10 @@ cards.forEach((card) => {
   cardClone.querySelector('.card__btn-like').addEventListener('click', (e) => {
     e.target.classList.toggle('card__btn-like_active')
   })
+  
+  cardClone.querySelector('.card__btn-delete').addEventListener('click', (e) => {
+    e.target.parentElement.remove()
+  })
   cardsContainer.appendChild(cardClone)
 })
 
@@ -111,6 +115,12 @@ function handleAddFormSubmit(evt) {
   cardImg.addEventListener('click', (e) => {
     imagePopup.querySelector('.popup_image').src = e.target.src;
     openPopup(imagePopup)
+  })
+  cardToAdd.querySelector('.card__btn-like').addEventListener('click', (e) => {
+    e.target.classList.toggle('card__btn-like_active')
+  })
+  cardToAdd.querySelector('.card__btn-delete').addEventListener('click', (e) => {
+    e.target.parentElement.remove()
   })
 
   cardsContainer.prepend(cardToAdd)
