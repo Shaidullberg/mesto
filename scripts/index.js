@@ -57,6 +57,9 @@ cards.forEach((card) => {
     imagePopup.querySelector('.popup_image').src = e.target.src;
     openPopup(imagePopup)
   })
+  cardClone.querySelector('.card__btn-like').addEventListener('click', (e) => {
+    e.target.classList.toggle('card__btn-like_active')
+  })
   cardsContainer.appendChild(cardClone)
 })
 
