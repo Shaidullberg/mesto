@@ -21,27 +21,27 @@ const btnClosePopup = document.querySelectorAll(".popup__button-exit");
 const cards = [
   {
     name: "Пермь",
-    link: "../img/perm.png",
+    link: "img/perm.png",
   },
   {
     name: "Челябинск",
-    link: "../img/chelyabinsk.png",
+    link: "img/chelyabinsk.png",
   },
   {
     name: "Омск",
-    link: "../img/omsk.png",
+    link: "img/omsk.png",
   },
   {
     name: "Саратов",
-    link: "../img/saratov.png",
+    link: "img/saratov.png",
   },
   {
     name: "Волгоград",
-    link: "../img/volgograd.png",
+    link: "img/volgograd.png",
   },
   {
     name: "Норильск",
-    link: "../img/norilsk.png",
+    link: "img/norilsk.png",
   },
 ];
 
@@ -58,7 +58,7 @@ function createCard(card) {
   btnPutLike.addEventListener('click', handlebtnPutLike);
 
   cardImage.addEventListener('click', function() {
-    const popupImageCard = document.querySelector('.popup__image_container')
+    const popupImageCard = document.querySelector('.popup__viewing')
     const popupImage = document.querySelector('.popup__image');
     const popupCaption = document.querySelector('.popup__caption')
     popupImage.setAttribute('src', card.link);
