@@ -12,6 +12,7 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
+    mix-blend-mode: difference; /* добавил с учётом того, что фон сверху справа может быть белым, тогда иконку корзинки не видно*/
 }
 
 .card__btn-delete:hover {
