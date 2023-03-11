@@ -9,10 +9,12 @@
   </head>
 
   <body class="root">
+    
     <!-- Шапка сайта -->
     <header class="header">
       <img src="img/Vector.svg" alt="Логотип сайта" class="header__logo" />
     </header>
+
     <!-- Основной контент страницы -->
     <main class="content">
       <!-- Секция информации о профиле, редактирование информации о профиле и добавление карточек -->
@@ -42,20 +44,17 @@
           </li>
         </template>  
 
-
-
       <!-- Начало секции карточек с подписанными изображениями чего-то -->
       <section class="elements">
-        <ul class="cards">
-        </ul>
+        <ul class="cards"></ul>
       </section>
-
 
       <!-- подвал сайта -->
       <footer class="footer">
         <p class="footer__copyright">© 2020 Mesto Russia</p>
       </footer>
     </main>
+
     <!-- всплывающее окно для редактирования профиля -->
     <div class="popup popup_edit-profile">
       <div class="popup__container">
@@ -66,13 +65,13 @@
             <!-- Поле для ввода информации о себе -->
             <input type="text" id="about" name="about" class="popup__item popup__item_el_about" placeholder="Введите информацию о себе" />
             <!-- кнопка для сохранения введённых в поля данных пользователя -->
-            <button type="submit" class="popup__button-save">Сохранить</button>
+            <button type="submit" class="popup__button-save popup__button-save_profile">Сохранить</button>
           </form>
           <!-- Кнопка для закрытия попапа -->
           <button type="button" class="popup__button-exit"></button>
       </div>
     </div>
-    
+
     <!-- Всплывающее окно для добавления карточек -->
     <div class="popup popup_add-card">
       <div class="popup__container">
@@ -83,20 +82,23 @@
             <!-- Поле для вставки ссылки на изображение -->
             <input type="text" id="link" name="link" class="popup__item popup__item_add-link" placeholder="Ссылка на картинку" />
             <!-- кнопка для сохранения введённых в поля данных пользователя -->
-            <button type="submit" class="popup__button-save">Создать</button>
+            <button type="submit" class="popup__button-save popup__button-save_card">Создать</button>
           </form>
           <!-- Кнопка для закрытия попапа -->
           <button type="button" class="popup__button-exit"></button>
       </div>
     </div>
+
     <!-- Всплывающее окно для карточек -->
-    <div class="popup popup_image_container">
-      <div class="popup__container">
-          <img src="" alt="" class="popup_image">
+    <div class="popup popup__image_container">
+      <figure class="popup__container_image">
+          <img src="" alt="" class="popup__image">
+          <figcaption class="popup__caption"></figcaption>
           <!-- Кнопка для закрытия попапа -->
           <button type="button" class="popup__button-exit"></button>
-      </div>
+      </figure>
     </div>
+
     <!-- Подключил скрипт -->
     <script src="scripts/index.js"></script>
   </body>
