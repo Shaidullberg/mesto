@@ -58,7 +58,7 @@ function createCard(card) {
   btnPutLike.addEventListener('click', handlebtnPutLike);
 
   cardImage.addEventListener('click', function() {
-    const popupImageCard = document.querySelector('.popup__viewing')
+    const popupImageCard = document.querySelector('.popup_viewing')
     const popupImage = document.querySelector('.popup__image');
     const popupCaption = document.querySelector('.popup__caption')
     popupImage.setAttribute('src', card.link);
