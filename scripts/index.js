@@ -30,7 +30,7 @@ const cards = [
     link: "https://s01.yapfiles.ru/files/257673/uborshikvmagazine.gif",
   },
   {
-    name: "Ревью",
+    name: "Просмотр ревью",
     link: "https://avatars.mds.yandex.net/get-images-cbir/8294717/lOoOgYsFiBU0oVmgXedyWQ270/ocr",
   },
   {
@@ -47,6 +47,7 @@ const cards = [
   },
 ];
 
+// Функция создания новой карточки
 function createCard(card) {
   const newCard = template.content.cloneNode(true);
   const cardTitle = newCard.querySelector(".card__title");
@@ -64,11 +65,26 @@ function createCard(card) {
     popupCaption.textContent = card.name;
     openPopup(popupImageCard);
   });
-  
-  cardContainer.prepend(newCard);
+
+  return newCard;
 }
 
-cards.forEach(createCard);
+function addCard() {
+  const cardTitle = popupValuePlacename.value;
+  const cardLink = popupValueLink.value;
+  const newCard = {
+    name: cardTitle,
+    link: cardLink,
+  };
+  const newCards = [newCard, ...cards.slice()];
+  const cardElement = createCard(newCard);
+  cardContainer.prepend(cardElement);
+}
+
+cards.slice().forEach(function (card) {
+  const cardElement = createCard(card);
+  cardContainer.prepend(cardElement);
+});
 
 //Функция удаления карточек
 function handleBtnDeleteCard(event) {
@@ -77,6 +93,7 @@ function handleBtnDeleteCard(event) {
   card.remove();
 }
 
+// Функция переключения класса лайка
 function toggleLike(event) {
   const putLike = event.target;
   putLike.classList.toggle("card__btn-like_active");
@@ -107,26 +124,14 @@ function closePopup(popup) {
   popup.classList.remove("popup_opened");
 }
 
-function addCard() {
-  const cardTitle = popupValuePlacename.value;
-  const cardLink = popupValueLink.value;
-  const newCard = {
-    name: cardTitle,
-    link: cardLink,
-  };
-  cards.unshift(newCard);
-  createCard(newCard);
-}
-
-formProfile.addEventListener("submit", function(evt) {
+formProfile.addEventListener("submit", function (evt) {
   evt.preventDefault();
-profileTitle.textContent = popupValueName.value;
-profileSubtitle.textContent = popupValueAbout.value;
-closePopup(popupProfile);
-})
+  profileTitle.textContent = popupValueName.value;
+  profileSubtitle.textContent = popupValueAbout.value;
+  closePopup(popupProfile);
+});
 
-
-formAddCard.addEventListener("submit", function(evt) {
+formAddCard.addEventListener("submit", function (evt) {
   evt.preventDefault();
   addCard();
   closePopup(popupAddCard);
