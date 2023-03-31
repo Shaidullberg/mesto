@@ -31,7 +31,7 @@ const cards = [
   },
   {
     name: "Просмотр ревью",
-    link: "https://avatars.mds.yandex.net/get-images-cbir/8294717/lOoOgYsFiBU0oVmgXedyWQ270/ocr",
+    link: "https://loginportal.funnyjunk.com/comments/This+comment+section+is+painful+how+many+of+yous+were+_d1394908fc7ed3e631db91e1de33e3f7.png",
   },
   {
     name: "Кодинг",
